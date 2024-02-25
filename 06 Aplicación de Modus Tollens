@@ -1,0 +1,14 @@
+# Aplicación de Modus Tollens
+def modus_tollens(consecuente, reglas):
+    # Busca el consecuente en las reglas de implicación
+    for antecedente, cons in reglas.items():
+        if cons == consecuente:
+            return antecedente
+    return "No se puede aplicar Modus Tollens"
+
+# Ejemplo de uso:
+reglas = reglas_implicacion()
+consecuente = "suelo mojado"
+
+resultado = modus_tollens(consecuente, reglas)
+print("Resultado de Modus Tollens:", resultado)
