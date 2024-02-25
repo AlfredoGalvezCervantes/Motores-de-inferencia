@@ -1,0 +1,8 @@
+# Definición de reglas de implicación
+def reglas_implicacion():
+    # Define las reglas de implicación como un diccionario donde la clave es el consecuente y el valor es el antecedente
+    reglas = {
+        "suelo mojado": "llueve",
+        "resbaladizo": "suelo mojado"
+    }
+    return reglas
