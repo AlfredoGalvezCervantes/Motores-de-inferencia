@@ -1,0 +1,15 @@
+# Modus Tollens: Si A implica B, y B es falso, entonces A es falso.
+
+def modus_tollens(B, B_implica_A):
+    if not B:
+        return not B_implica_A
+    else:
+        return "No se puede aplicar Modus Tollens"
+
+# Ejemplo:
+B = False
+B_implica_A = True
+
+resultado = modus_tollens(B, B_implica_A)
+
+print("Resultado de Modus Tollens:", resultado)
