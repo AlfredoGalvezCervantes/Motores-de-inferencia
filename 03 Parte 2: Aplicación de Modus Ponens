@@ -1,0 +1,15 @@
+# Aplicación de Modus Ponens
+def modus_ponens(antecedente, reglas):
+    # Verifica si el antecedente está en las reglas de implicación
+    if antecedente in reglas:
+        consecuente = reglas[antecedente]
+        return consecuente
+    else:
+        return "No se puede aplicar Modus Ponens"
+
+# Ejemplo de uso:
+reglas = reglas_implicacion()
+antecedente = "llueve"
+
+resultado = modus_ponens(antecedente, reglas)
+print("Resultado de Modus Ponens:", resultado)
