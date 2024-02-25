@@ -1,0 +1,15 @@
+# Modus Ponens: Si A implica B, y A es verdadero, entonces B es verdadero.
+
+def modus_ponens(A, B_implica_A):
+    if A:
+        return B_implica_A
+    else:
+        return "No se puede aplicar Modus Ponens"
+
+# Ejemplo:
+A = True
+B_implica_A = True
+
+resultado = modus_ponens(A, B_implica_A)
+
+print("Resultado de Modus Ponens:", resultado)
